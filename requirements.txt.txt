@@ -1,8 +1,14 @@
-streamlit
-torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# Streamlit
+streamlit==1.49.1
 
-timm
-pillow
-albumentations
+# PyTorch (CPU-only)
+torch==2.3.1+cpu
+torchvision==0.18.1+cpu
+torchaudio==2.3.1+cpu
+--index-url https://download.pytorch.org/whl/cpu
+
+# Other ML/DS dependencies (if needed)
 pandas
-opencv-python-headless
+numpy
+pillow
+scikit-learn
