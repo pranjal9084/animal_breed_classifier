@@ -176,7 +176,7 @@ from albumentations.pytorch import ToTensorV2
 import pandas as pd
 
 # --- Load breed info Excel ---
-BREED_INFO_PATH = r"C:\Users\baniy\Desktop\project_sih\output\breed_morphology.csv"
+BREED_INFO_PATH = "breed_morphology.csv"
 breed_info_df = pd.read_csv(BREED_INFO_PATH)  # use read_csv for CSV files
 breed_info_df['Breed'] = breed_info_df['Breed'].str.lower()
 
@@ -184,7 +184,7 @@ breed_info_df['Breed'] = breed_info_df['Breed'].str.lower()
 # --- Constants ---
 NUM_CLASSES = 42
 IMG_SIZE = 224
-MODEL_PATH = r"C:\Users\baniy\Desktop\project_sih\output\new_model.pth"
+MODEL_PATH = "new_model.pth"
 
 # --- Classes and mappings ---
 classes = ['Alambadi', 'Amritmahal', 'Ayrshire', 'Banni', 'Bargur', 'Bhadawari', 'Brown_Swiss', 'Dangi', 'Deoni', 'Gir', 'Guernsey', 'Hallikar', 'Hariana', 'Holstein_Friesian', 'Jaffrabadi', 'Jersey', 'Kangayam', 'Kankrej', 'Kasargod', 'Kenkatha', 'Kherigarh', 'Khillari', 'Krishna_Valley', 'Malnad_gidda', 'Mehsana', 'Murrah', 'Nagori', 'Nagpuri', 'Nili_Ravi', 'Nimari', 'Ongole', 'Pulikulam', 'Rathi', 'Red_Dane', 'Red_Sindhi', 'Sahiwal', 'Surti', 'Surti buffalo', 'Tharparkar', 'Toda', 'Umblachery', 'Vechur']
